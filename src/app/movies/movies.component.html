@@ -1,0 +1,19 @@
+<header>
+  <h1>Box office movies</h1>
+</header>
+
+<div id="grid">
+  <div id="card">
+    <div id="card1" class="example-card" *ngFor="let movie of movies">
+      <img src="{{movie.poster}}" alt="Cover" id="image">
+      <title id="title">{{movie.title}}</title>
+      <section>
+        <p id="description">
+          {{movie.plot}}
+        </p>
+        <span>{{movie.year}}</span>
+      </section>
+    </div>
+  </div>
+</div>
+
