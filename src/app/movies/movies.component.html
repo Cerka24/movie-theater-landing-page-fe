@@ -4,7 +4,7 @@
 
 <div id="grid">
   <div id="card">
-    <div id="card1" class="example-card" *ngFor="let movie of movies">
+    <div id="card1" (click)="navigateToMovie(movie.id)" class="example-card" *ngFor="let movie of movies">
       <img src="{{movie.poster}}" alt="Cover" id="image">
       <title id="title">{{movie.title}}</title>
       <section>

@@ -1,8 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {MoviesModel} from "../moviesModel";
+import {MoviesModel} from "../models/moviesModel";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Subscription} from "rxjs";
-import {MoviesService} from "../movies.service";
+import {MoviesService} from "../services/movies.service";
 
 @Component({
   selector: 'app-movies',
@@ -33,5 +33,11 @@ export class MoviesComponent implements OnInit, OnDestroy{
 
   ngOnDestroy(): void {
     this.unsubscribe!.unsubscribe()
+  }
+
+  navigateToMovie(id: number): void {
+    this.router.navigate([
+      'movie/' + id
+    ])
   }
 }
