@@ -1,0 +1,24 @@
+#image {
+  margin-bottom: auto;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  border-bottom-style: solid;
+}
+
+#plot {
+  text-align: center;
+}
+
+#year {
+  text-align: center;
+}
+
+footer {
+  border-top-style: solid;
+}

@@ -10,18 +10,6 @@ import {MoviesService} from "../services/movies.service";
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit, OnDestroy{
-  // public movies!: MoviesModel;
-  // private unsubscribe: Subscription[] = [];
-  //
-  // constructor(private activatedRoute: ActivatedRoute) {
-  // }
-  //
-  // ngOnInit(): void {
-  //   this.unsubscribe.push(this.activatedRoute.data.subscribe(data =>{
-  //     this.movies = data['movies'];
-  //     console.log(data);
-  //   }))
-  // }
   public movies: Array<MoviesModel> = []
   private unsubscribe: Subscription | undefined;
 
